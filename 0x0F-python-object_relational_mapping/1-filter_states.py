@@ -9,7 +9,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = connec.cursor()
     cur.execute("""SELECT * FROM states WHERE name
-                LIKE BINARY 'n%' ORDER BY states.id""")
+                LIKE BINARY 'N%' ORDER BY states.id""")
     values = cur.fetchall()
     for value in values:
         print(value)
