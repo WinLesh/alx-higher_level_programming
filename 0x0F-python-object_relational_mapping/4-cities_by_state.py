@@ -11,7 +11,7 @@ if __name__ == "__main__":
     cur.execute("""SELECT cities.id, cities.name, states.name FROM
                 cities INNER JOIN states ON states.id=cities.state_id""")
     values = cur.fetchall()
-    for row in values:
+    for value in values:
         print(value)
     cur.close()
     connec.close()
