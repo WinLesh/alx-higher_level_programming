@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 """ get the first 10 commits from repo
 """
 if __name__ == "__main__":
